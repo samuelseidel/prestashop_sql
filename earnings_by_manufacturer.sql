@@ -3,6 +3,7 @@ FROM ps_order_detail
 LEFT JOIN ps_orders ON ps_order_detail.id_order = ps_orders.id_order
 LEFT JOIN ps_product ON ps_product.id_product = ps_order_detail.product_id
 LEFT JOIN ps_manufacturer ON ps_manufacturer.id_manufacturer = ps_product.id_manufacturer
+
 /* Pro filtrování podle obchodů: */
 /* WHERE ps_order_detail.id_shop = 1 */
 
